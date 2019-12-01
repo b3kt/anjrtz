@@ -1,0 +1,37 @@
+POST
+http://localhost:8080/auth/realms/master/protocol/openid-connect/token
+@Content-Type: application/x-www-form-urlencoded
+@Authorization: Basic YWRtaW4tY2xpOjUwMTljNzk2LTE5YzAtNDQzOC1iZjEzLTNhMmUyYmU1OTA2Ng==
+
+username=admin&password=password&grant_type=password
+
+%%%
+# Duration: 211 ms
+# POST
+# http://localhost:8080/auth/realms/master/protocol/openid-connect/token
+# Headers
+# @Authorization: Basic YWRtaW4tY2xpOjUwMTljNzk2LTE5YzAtNDQzOC1iZjEzLTNhMmUyYmU1OTA2Ng==
+# @Content-Type: application/x-www-form-urlencoded
+# password=password&grant_type=password&username=admin
+
+
+# status 200
+
+@Connection: keep-alive
+@Cache-Control: no-store
+@Set-Cookie: KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/master/; HttpOnly
+@Pragma: no-cache
+@Content-Type: application/json
+@Content-Length: 1912
+@Date: Sat, 30 Nov 2019 16:41:33 GMT
+
+{
+  "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJva1c4YTZ3VkkwOTI2X0M0Qm5kRElaU1R4WnZYcURPLUZ0N0VFeHBBbjNJIn0.eyJqdGkiOiI5MGY1NDcwYy0yNzBlLTRmMWYtOGMwZi1mOWE2NjczNGM1NzEiLCJleHAiOjE1NzUxMzIxNTMsIm5iZiI6MCwiaWF0IjoxNTc1MTMyMDkzLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvYXV0aC9yZWFsbXMvbWFzdGVyIiwic3ViIjoiNTQ2ZGE1ZjUtMGQ3Yy00MDE0LWE2M2QtOGY2MWU5ZjhhYjI5IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYWRtaW4tY2xpIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiYjY4ZGNjOWEtOTQyMy00OTUwLThhNDUtZjAyYTlkODUyNDQ1IiwiYWNyIjoiMSIsInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6ImFkbWluIGlzdHJhdG9yIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYWRtaW4iLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJmYW1pbHlfbmFtZSI6ImlzdHJhdG9yIiwiZW1haWwiOiJ0ZXN0QGVtYWlsLmNvbSJ9.GQvvZbdO-Jerhcw1YXXcb_fAIfkr52GvTDhjVaRPpkcTUUjqoA2xF_oaHu4VIsFoYwlpWTZ0miN79J-RJb8653SXsFbKOUFfy6BH_4xjTl6T3vpora9FsvGKJbvwBHQCKXGfPGsF1uhK4B3pz9UlblKSpHoB74mtpryJH79vgqe0QUG_PVo0m2N-EdArOqdwvaC4_RH54YuvdeeGZ0e9Bc555k_4PDd2gQCOt8jL1F8td6apYsDDWu8v3PO4Lsi34KzNTXwAaM1_9M9rc0CKMryLVARMw41O2ZuFnm9-NZ58azU4Tx8h5C9BrdPhADT9V62kS77UebLAtm8L7JI9ZQ",
+  "expires_in": 60,
+  "refresh_expires_in": 1800,
+  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIwNzg5MjMxNy05MDhkLTQwZDQtYjc0YS00Yzc5MzViMDg3YzEifQ.eyJqdGkiOiJlMjIxMDA2Zi1kZTFkLTQ5MjItYmYyYy0zMWZkM2M3ZjZkMzgiLCJleHAiOjE1NzUxMzM4OTMsIm5iZiI6MCwiaWF0IjoxNTc1MTMyMDkzLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvYXV0aC9yZWFsbXMvbWFzdGVyIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL21hc3RlciIsInN1YiI6IjU0NmRhNWY1LTBkN2MtNDAxNC1hNjNkLThmNjFlOWY4YWIyOSIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJhZG1pbi1jbGkiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiJiNjhkY2M5YS05NDIzLTQ5NTAtOGE0NS1mMDJhOWQ4NTI0NDUiLCJzY29wZSI6InByb2ZpbGUgZW1haWwifQ.oTSZgo_kaSeL2hVtwK-Ndw62K6r1YuCrxR05zgbB_SQ",
+  "token_type": "bearer",
+  "not-before-policy": 1574697960,
+  "session_state": "b68dcc9a-9423-4950-8a45-f02a9d852445",
+  "scope": "profile email"
+}
