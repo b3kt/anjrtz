@@ -1,0 +1,23 @@
+GET
+http://localhost:8080/auth/admin/realms/master/users
+@Authorization: Basic YWNjb3VudDo1YTU5ZTU0OC1lYTMyLTQ1MTAtOTFjOC0zOTQ5MWQ3NjY5NTE=
+
+
+%%%
+# Duration: 41 ms
+# GET
+# http://localhost:8080/auth/admin/realms/master/users
+# Headers
+# @Authorization: Basic YWNjb3VudDo1YTU5ZTU0OC1lYTMyLTQ1MTAtOTFjOC0zOTQ5MWQ3NjY5NTE=
+
+
+# status 401
+
+@Connection: keep-alive
+@Content-Type: application/json
+@Content-Length: 33
+@Date: Sun, 01 Dec 2019 10:05:04 GMT
+
+{
+  "error": "HTTP 401 Unauthorized"
+}
