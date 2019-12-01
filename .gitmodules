@@ -1,6 +1,6 @@
 [submodule "core"]
 	path = core
-	url = ./core
+	url = https://github.com/subekticahyo/core.git
 [submodule "iam-srv"]
 	path = iam-srv
-	url = ./iam-srv
+	url = https://github.com/subekticahyo/iam-srv.git
